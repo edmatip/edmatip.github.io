@@ -1,0 +1,176 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  
+  body {
+    background-color: #f8f8f8;
+    color: #444;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .lista1 li,
+  .lista3 li {
+    margin-bottom: 10px;
+  }
+  
+  .lista2 li {
+    margin-bottom: 20px;
+  }
+  
+  .lista4 li {
+    margin-bottom: 15px;
+  }
+  
+  .busqueda {
+    margin-bottom: 40px;
+  }
+  
+  .historia,
+  .estudios,
+  .habilidades {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de la estructura de la página */
+  
+  /* Header */
+  
+  .headerPrincipal {
+    background-color: #1445a5;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .tituloPrincipal {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .subtitulo {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  
+  /* Main */
+  
+  .imgRandomuser {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .lista2 {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .lista3 {
+    list-style-type: circle;
+    margin-left: 20px;
+  }
+  
+  .lista4 {
+    list-style-type: square;
+    margin-left: 20px;
+  }
+  
+  .pie {
+    text-align: center;
+    padding: 10px;
+    background-color: #1445a5;
+    color: #fff;
+  }
+  
+  /* Esto se lo robe a otra pagina */
+
+  @media only screen and (max-width: 768px) {
+    .container2 {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+  /* Estilos de botones */
+  
+  button {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #1445a5;
+    padding: 10px 0px;
+    margin-right: 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* el boton de ancla por ser un link no pude asociarlo arriba agregue losiguiente sacado de panel de desarrollador de chrome */
+  a:-webkit-any-link {
+    color: #fff;;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+  .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item:last-child {
+    margin-right: 0;
+  }
+  
+  .contact-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact-link {
+    text-decoration: none;
+    color: #555;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-link:hover {
+    color: #007bff;
+  }
+  
